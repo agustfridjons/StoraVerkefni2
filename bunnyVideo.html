@@ -12,16 +12,16 @@
   <main>
     <div class="content">
     <div class="myndband">
-      <video width="800" controls>
+      <video id="video" width="800">
         <source src="bunny.mp4" type="video/mp4">
       </video>
     </div>
     <div class="skipanir">
-      <button class="back"><img src="back.svg" alt=""></button>
-      <button class="playpause"><img src="play.svg" alt=""></button>
-      <button class="muteunmute"><img src="mute.svg" alt=""></button>
-      <button class="fullscreen"><img src="fullscreen.svg" alt=""></button>
-      <button class="next"><img src="next.svg" alt=""></button>
+      <button class="back"><img src="back.svg"></button>
+      <button class="playpause"><img src="play.svg" onclick="breytaplaypauseMynd()" id="playpause"></button>
+      <button class="muteunmute"><img src="mute.svg" onclick="breytamuteunmuteMynd()" id="muteunmute"></button>
+      <button class="fullscreen"><img src="fullscreen.svg"></button>
+      <button class="next"><img src="next.svg"></button>
     </div>
   </div>
   </main>
