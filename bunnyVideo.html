@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="grid" lang="is">
+  <head>
+    <meta charset="utf-8">
+    <title>Stórt verkefni 2</title>
+    <link rel="stylesheet" href="bunnyStyles.css">
+  </head>
+<header>
+  <h1>Big Bunny</h2>
+</header>
+<body>
+  <main>
+    <div class="content">
+    <div class="myndband">
+      <video id="video" width="800">
+        <source src="bunny.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="skipanir">
+      <button class="back"><img src="back.svg"></button>
+      <button class="playpause"><img src="play.svg" onclick="breytaplaypauseMynd()" id="playpause"></button>
+      <button class="muteunmute"><img src="mute.svg" onclick="breytamuteunmuteMynd()" id="muteunmute"></button>
+      <button class="fullscreen"><img src="fullscreen.svg"></button>
+      <button class="next"><img src="next.svg"></button>
+    </div>
+  </div>
+  </main>
+  <script src="bunnyScript.js"></script>
+</body>
+</html>
