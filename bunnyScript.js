@@ -9,16 +9,19 @@ backButton.addEventListener('click', function() {
 
 //Spila pásu takki overlay
 var playPauseButtonB = document.querySelector('.playpauseB');
+var mshade = document.querySelector('.myndband');
 playPauseButtonB.addEventListener('click', function() {
   if (myndband.paused) {
       myndband.play();
       breytaplaypauseMyndA();
-      playPauseButtonB.classList.add("hidden");
+      mshade.classList.remove('shade');
+      playPauseButtonB.classList.add('hidden');
   }
   else {
       myndband.pause();
       breytaplaypauseMyndA();
-      playPauseButtonB.classList.remove("hidden");
+      mshade.classList.add('shade');
+      playPauseButtonB.classList.remove('hidden');
     }
 });
 
@@ -27,11 +30,13 @@ var playPauseButtonA = document.querySelector('.playpauseA');
 playPauseButtonA.addEventListener('click', function() {
   if (myndband.paused) {
       myndband.play();
-      playPauseButtonB.classList.add("hidden");
+      mshade.classList.remove('shade');
+      playPauseButtonB.classList.add('hidden');
   }
   else {
       myndband.pause();
-      playPauseButtonB.classList.remove("hidden");
+      mshade.classList.add('shade');
+      playPauseButtonB.classList.remove('hidden');
     }
 });
 var playpauseMyndA = document.getElementById('playpauseA');
