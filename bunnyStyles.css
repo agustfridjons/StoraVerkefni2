@@ -45,6 +45,11 @@ body {
       .myndband {
         position: relative;
       }
+
+      .shade{
+        opacity: 0.6;
+      }
+
       .hidden{
         display: none;
       }
@@ -63,7 +68,9 @@ body {
           border-width: 0px;
           background: bottom;
           margin: 5px;
+          cursor: pointer;
         }
+
           img {
             width: 30px;
             height: 30px;
